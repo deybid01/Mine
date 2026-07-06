@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Flip Message ❤️</title>
+
+<script>
+// Return to landing page when refreshed
+const navigation = performance.getEntriesByType("navigation")[0];
+
+if (navigation && navigation.type === "reload") {
+    window.location.replace("start1.html");
+}
+</script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:40px;
+    min-height:100vh;
+    padding:30px;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4);
+}
+
+.container{
+    text-align:center;
+}
+
+.card{
+    width:320px;
+    height:420px;
+    perspective:1000px;
+    cursor:pointer;
+}
+
+.card-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:.8s;
+    transform-style:preserve-3d;
+}
+
+.card.flip .card-inner{
+    transform:rotateY(180deg);
+}
+
+.card-front,
+.card-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:20px;
+    overflow:hidden;
+    backface-visibility:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.card-front img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.card-back{
+    background:white;
+    transform:rotateY(180deg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.message{
+    font-size:20px;
+    line-height:1.7;
+    color:#444;
+}
+
+p{
+    margin-top:15px;
+    color:black;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+body{
+    flex-direction:column;
+}
+
+.card{
+    width:90vw;
+    max-width:320px;
+    height:420px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- CARD 1 -->
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="1.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+❤️ <br><br>
+Mamahalin ka ng totoo<br><br>
+
+Sa una pa lang alam ko na.
+Alam kong gusto talaga kita.
+
+Hindi para paglaruan ka o saktan ka
+kundi para mahalin ka ng totoo at
+walang katulad.
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="2.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Lagi kang papasayahin.<br><br>
+
+Hindi man araw-araw pero pipilitin kong
+ikaw ay mapasaya.
+
+Gagawin ang lahat para
+makita lang ang ngiti mo.
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="3.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Lagi kang iingatan.<br><br>
+
+Hindi ko hahayaan
+na ikaw ay masaktan.
+
+Papanatilihin ko
+ang ngiti sa labi mo.
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="4.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Hindi ka pababayaan.<br><br>
+
+Asahan mo na palagi lang
+akong nandito.
+
+Sasamahan kita saan ka man
+magpunta at hindi kita
+hahayaan na mag-isa.
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="5.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Magiging tapat sa'yo.<br><br>
+
+Mamahalin ka nang totoo
+at walang halong panloloko.
+
+Buong-buo ang desisyon ko,
+katulad ng pagpili ko sa'yo.
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="6.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Lagi kang iintindihin.<br><br>
+
+Hahabaan ko ang pasensya
+para hindi tayo magkaproblema.
+
+Mamahalin kita hindi lamang
+sa pakiramdam kundi pati
+sa isip at puso.
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div> 
+
+<!-- CARD 7 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="7.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Hinding hindi ka kakalimutan.<br><br>
+
+Lagi kitang aalalahanin,
+hindi lamang sa mga pagkakataon
+kundi sa bawat araw na lumilipas.
+
+Ikaw ay mananatili
+sa puso ko.
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- CARD 8 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="8.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Tatanggapin kita ng buong-buo.<br><br>
+
+Mamahalin kita
+sa lahat ng iyong katangian.
+
+Maganda man o hindi,
+ikaw pa rin ang pipiliin ko.
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- CARD 9 -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="card-inner">
+
+<div class="card-front">
+<img src="9.jpg">
+</div>
+
+<div class="card-back">
+<div class="message">
+
+❤️ <br><br>
+
+Pipiliin kita araw-araw.<br><br>
+
+Sa hirap man o ginhawa,
+ikaw ang pipiliin ko.
+
+Pangako ko,
+ikaw lang.
+
+❤️
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<p>Click the photo to flip.</p>
+
+</div>
+
+<!-- Background Music -->
+
+<audio id="bgMusic" loop>
+    <source src="mine.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+// Flip every card
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+    card.addEventListener("click",()=>{
+
+        card.classList.toggle("flip");
+
+    });
+
+});
+
+// Music
+const music=document.getElementById("bgMusic");
+
+// Try to start automatically when coming from start.html
+if(sessionStorage.getItem("playMusic")){
+
+    music.play().catch(()=>{
+
+        console.log("Autoplay blocked by browser.");
+
+    });
+
+    sessionStorage.removeItem("playMusic");
+
+}
+
+// If autoplay is blocked, the first click anywhere starts the music.
+document.addEventListener("click",()=>{
+
+    if(music.paused){
+
+        music.play().catch(()=>{});
+
+    }
+
+},{once:true});
+
+</script>
+
+</body>
+</html>
